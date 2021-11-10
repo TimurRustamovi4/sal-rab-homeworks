@@ -5,10 +5,11 @@ function renderCartItem(item) {
 
     // product - объект вида {id: id, title: title, count: count, price: price}
     // например, {id: 1, title: 'Пицца', count: 5, price: '500.00'}, где
-    let id;// id - идентификатор
-    let title;// title - наименование
-    let price;// price - цена
-    let count;// count - количество
+    // id - идентификатор
+    // title - наименование
+    // price - цена
+    product.price;
+    product.count;// count - количество
 
      
     // сформируйте строку itemCountText вида:
