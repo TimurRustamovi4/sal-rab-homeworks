@@ -8,8 +8,8 @@ function renderCartItem(item) {
     // id - идентификатор
     // title - наименование
     // price - цена
-    product.price;
-    product.count;// count - количество
+    let price = product.price;
+    let count = product.count;// count - количество
 
      
     // сформируйте строку itemCountText вида:
