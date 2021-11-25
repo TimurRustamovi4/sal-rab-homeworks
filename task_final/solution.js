@@ -34,19 +34,18 @@
 // }
 
 function sendRequest(name, phone, address, goods, sum) {
-    let data = {goods:[{title}, {count}], order:{address, sum}, client:{name, phone}};
+    let data = {goods:[], order:{address, sum}, client:{name, phone}};
 
-    
-    let countOfGoods = goods.count.length; 
+        let countOfGoods = data.goods.length; 
 
-    for (let i = 0; i <= countOfGoods; i++) {
-        data.goods.push(goods[i].title);
+    for (let i = 0; i < countOfGoods; i = i + 1) {
+        data.goods.push(goods[i].title, goods[i].count);
     }
 
-    data.order.address = address;
-    data.order.sum = name + phone + address + goods + sum;
+    data.order.address = String(address);
+    data.order.sum = sum;
 
-    data.client = 'Иван +7(987)65-43-210';
+    data.client = name + ' ' + phone;
 
     let jsonData = JSON.stringify({data});
 
